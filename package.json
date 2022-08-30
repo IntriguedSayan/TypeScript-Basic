@@ -1,0 +1,20 @@
+{
+  "name": "typescript-basic",
+  "version": "1.0.0",
+  "description": "Basic things about TypeScript.\r first TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IntriguedSayan/TypeScript-Basic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IntriguedSayan/TypeScript-Basic/issues"
+  },
+  "homepage": "https://github.com/IntriguedSayan/TypeScript-Basic#readme"
+}
