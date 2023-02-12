@@ -46,3 +46,17 @@ interface PersonDetails {
 declare const arrPersonDetails: PersonDetails[];
 declare function PhoneBook(obj: PersonDetails): void;
 declare const objPersonDetails: PersonDetails;
+interface User {
+    type: "user";
+    name: string;
+    age: number;
+    occupation: string;
+}
+interface Admin {
+    type: "admin";
+    name: string;
+    age: number;
+    occupation: string;
+}
+declare function getType(obj: User | Admin): string;
+declare const user1: User;

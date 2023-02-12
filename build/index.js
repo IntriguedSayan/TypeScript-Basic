@@ -40,4 +40,14 @@ const objPersonDetails = {
     lastname: "Barou",
 };
 PhoneBook(objPersonDetails);
+function getType(obj) {
+    return obj.type;
+}
+const user1 = {
+    type: "user",
+    name: "user1",
+    age: 28,
+    occupation: "Programmer"
+};
+console.log(getType(user1));
 //# sourceMappingURL=index.js.map

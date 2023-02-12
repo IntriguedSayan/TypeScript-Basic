@@ -115,3 +115,41 @@ function printName(name:string):void{
   }
 
   PhoneBook(objPersonDetails);
+
+                                    //   TYPESCRIPT INTRO: 3
+                            
+ interface User{
+
+    type: "user";
+    name:string;
+    age:number;
+    occupation:string;
+
+ }                  
+ 
+ interface Admin{
+
+    type: "admin";
+    name:string;
+    age:number;
+    occupation:string;
+
+ }
+function getType(obj:User|Admin):string {
+
+
+    return obj.type;
+
+
+}
+
+const user1:User={
+
+    type: "user",
+    name: "user1",
+    age: 28,
+    occupation:"Programmer"
+}
+
+console.log(getType(user1));
+
