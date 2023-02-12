@@ -15,3 +15,34 @@ declare enum Users {
 }
 declare const firstTypeScriptFunction: (x: number, y: number) => number;
 declare function printName(name: string): void;
+interface stats {
+    id: number;
+    status: boolean;
+    title: string;
+}
+declare const obj: stats;
+declare type nameDetails = {
+    firstname: string;
+    lastname?: string;
+};
+declare const getName: ({ firstname, lastname }: nameDetails) => string;
+interface Address {
+    houseNumber: number;
+    street: string;
+    city: string;
+    state: string;
+    postalCode: number;
+    country: string;
+}
+interface PersonDetails {
+    Prefix?: string;
+    phones: number[];
+    addresses: string[];
+    email?: string;
+    firstname: string;
+    lastname: string;
+    middlename?: string;
+}
+declare const arrPersonDetails: PersonDetails[];
+declare function PhoneBook(obj: PersonDetails): void;
+declare const objPersonDetails: PersonDetails;

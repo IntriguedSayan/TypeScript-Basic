@@ -1,3 +1,5 @@
+                                // TYPESCRIPT INTRO: 1
+
 type name=string;
 let myName:name = "Shawn";
 
@@ -34,3 +36,82 @@ function printName(name:string):void{
     
 
 }
+
+                                    // TYPESCRIPT INTRO: 2
+
+  interface stats{
+
+    id:number;
+    status:boolean;
+    title:string;
+
+  }                                  
+
+  const obj:stats={
+
+    status:true,
+    title:"First object from interface",
+    id:1
+
+  }
+
+  type nameDetails = {
+
+    firstname:string;
+    lastname?:string;
+
+  }
+  
+
+  const getName=({firstname,lastname}:nameDetails):string =>{
+
+        return `${firstname} ${lastname}`;
+
+
+  } 
+
+  getName({firstname:"Shawn"});
+
+  interface Address{ 
+
+    houseNumber:number;
+    street:string;
+    city:string;
+    state:string;
+    postalCode:number;
+    country:string;
+
+  }
+
+  interface PersonDetails {
+
+    Prefix?:string;
+    phones:number[];
+    addresses:string[];
+    email?:string;
+    firstname:string;
+    lastname:string;
+    middlename?:string;
+
+  }
+
+
+  const arrPersonDetails:PersonDetails[]=[];
+
+  function PhoneBook(obj:PersonDetails):void{
+
+       arrPersonDetails.push(obj);
+
+  }
+
+  const objPersonDetails:PersonDetails={
+
+    phones:[12,23,34,45,56],
+    addresses:["Chennai","Bangalore"],
+    firstname:"Nagi",
+    lastname:"Barou",
+
+
+  }
+
+  PhoneBook(objPersonDetails);

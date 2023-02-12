@@ -1,3 +1,4 @@
+// TYPESCRIPT INTRO: 1
 let myName = "Shawn";
 let myAge = 26;
 let fetchStatus = true;
@@ -19,4 +20,24 @@ const firstTypeScriptFunction = (x, y) => {
 function printName(name) {
     console.log(name);
 }
+const obj = {
+    status: true,
+    title: "First object from interface",
+    id: 1
+};
+const getName = ({ firstname, lastname }) => {
+    return `${firstname} ${lastname}`;
+};
+getName({ firstname: "Shawn" });
+const arrPersonDetails = [];
+function PhoneBook(obj) {
+    arrPersonDetails.push(obj);
+}
+const objPersonDetails = {
+    phones: [12, 23, 34, 45, 56],
+    addresses: ["Chennai", "Bangalore"],
+    firstname: "Nagi",
+    lastname: "Barou",
+};
+PhoneBook(objPersonDetails);
 //# sourceMappingURL=index.js.map
