@@ -60,3 +60,4 @@ interface Admin {
 }
 declare function getType(obj: User | Admin): string;
 declare const user1: User;
+declare const user2: Admin;

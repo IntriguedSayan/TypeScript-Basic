@@ -151,5 +151,14 @@ const user1:User={
     occupation:"Programmer"
 }
 
-console.log(getType(user1));
+const user2:Admin={
+
+    type:"admin",
+    name: "user2",
+    age: 29,
+    occupation:"Programmer"
+
+}
+
+console.log(getType(user2));
 

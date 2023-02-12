@@ -49,5 +49,11 @@ const user1 = {
     age: 28,
     occupation: "Programmer"
 };
-console.log(getType(user1));
+const user2 = {
+    type: "admin",
+    name: "user2",
+    age: 29,
+    occupation: "Programmer"
+};
+console.log(getType(user2));
 //# sourceMappingURL=index.js.map
